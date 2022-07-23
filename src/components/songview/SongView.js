@@ -19,31 +19,25 @@ function SongView(props){
         
     // }
 
-    const simpleView = () => {
-        return (
-            <div className="simpleview">
-                <h3>{props.item.name}</h3>
-            </div>
-        )
-    }
+    const simpleView = () => {}
 
     const detailView = () => {
         return (
             <div className="detailview">
-                <h3>{props.item.name}</h3>
                 <div className="songdetail">
                     <div>Artist: {props.item.artist.name}</div>
                     <div>Monthly Listeners: {props.item.listeners}</div>
                     <div>Playcount: {props.item.playcount}</div>
                 </div>
-                <CreateReview />
-                <Reviews />
+                <CreateReview data={props}/>
+                <Reviews data={props}/>
             </div>
         )
     }
 
     return(
-        <div onClick={() => setView(!view)}>
+        <div>
+            <h3 onClick={() => setView(!view)}>{props.item.name}</h3>
             {view ? detailView() : simpleView()}
         </div>
     )

@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react'
 import './App.css';
 import NavBar from './components/navbar/Navbar';
 import Chart from './components/chart/Chart';
+import { BrowserRouter as Router, Route, } from 'react-router-dom'
+
+
+// require('dotenv').config()
+
 
 function App() {
 
