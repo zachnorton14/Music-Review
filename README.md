@@ -17,13 +17,13 @@ The back-end API that connects to this front-end is [located here](https://githu
 
 ## Credit
 
-# Back-End
+### Back-End
 
 *Zahra Masroor([github](https://github.com/ZahraO1))
 
 *Zachary Norton([github](https://github.com/okayzach))
 
-# Front-End
+### Front-End
 
 *John Roub([github](https://github.com/JohnRoub2000))
 
