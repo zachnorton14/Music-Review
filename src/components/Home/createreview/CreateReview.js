@@ -3,18 +3,21 @@ import './createreview.css'
 
 function CreateReview(props){
 
-    let [view, setView] = useState(false)
-    let [comment, setComment] = useState({
-        user_name: '',
+    const [view, setView] = useState(false)
+    const [comment, setComment] = useState({
+        name: '',
         rating: 5,
-        body: '',
-        song_name: props.data.name
+        comment: '',
+        song_name: `${props.data}`,
+        date:'2022-07-25' //ZM
     })
 
-    let [message, setMessage] = useState('')
+    const [message, setMessage] = useState('')
 
     async function handleSubmit(e){
-        const response = await fetch(`http://localhost:5000/comments/`, {
+        e.preventDefault() //ZM
+
+        const response = await fetch(`http://localhost:5000/comments`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -23,9 +26,10 @@ function CreateReview(props){
         })
 
         const data = await response.json()
-
+        
         if (response.status === 200) {
             setMessage('Review submitted')
+            console.log('success') //ZM
         } else {
             setMessage(data.message)
         }
@@ -40,8 +44,8 @@ function CreateReview(props){
                 <input 
                     type="text"
                     required
-                    value={comment.user_name}
-                    onChange={e => setComment({...comment, user_name: e.target.value})}
+                    value={comment.name} //ZM
+                    onChange={e => setComment({...comment, name: e.target.value})} //ZM
                     id="userName"
                     name="userName"
                 />
@@ -54,14 +58,14 @@ function CreateReview(props){
                     id="rating"
                     name="rating"
                     min="1" 
-                    max="5"
+                    max="10"
                 />
                 <label htmlFor="body">Your Review</label>
                 <input 
                     type="text"
                     required
-                    value={comment.body}
-                    onChange={e => setComment({...comment, body: e.target.value})}
+                    value={comment.comment} //ZM
+                    onChange={e => setComment({...comment, comment: e.target.value})} //ZM
                     id="body"
                     name="body"
                 />

@@ -1,0 +1,18 @@
+.simplestyle {
+    width: 25vw;
+    height: 20vh;
+    text-align: center;
+    border: 1px solid black;
+    margin: 2px
+}
+
+.detailstyle {
+    width: 25vw;
+    height: 40vh;
+    text-align: center;
+    border: 1px solid black;
+    margin: 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: blue;
+}

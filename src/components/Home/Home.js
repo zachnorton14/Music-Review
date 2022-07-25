@@ -2,7 +2,7 @@ import React from 'react'
 import Chart from './chart/Chart'
 import NavBar from '../../NavBar/Navbar'
 import { useState, useEffect } from 'react'
-import './home.css'
+import './Home.css'
 
 function Home() {
 
@@ -19,7 +19,7 @@ function Home() {
   }, [])
 
     return(
-        <div style={{'textAlign':'center'}}>
+        <div>
             <NavBar />
             <h1>HOME</h1>
             <Chart data={data}/>

@@ -7,10 +7,6 @@ import { Link, Navigate, useNavigate } from 'react-router-dom'
 function SongView(props){
     let [view, setView] = useState(false)
 
-    const handleClick = () => (
-        Navigate('/reviews')
-    )
-
     const simpleView = () => {}
 
     const detailView = () => {
@@ -21,7 +17,7 @@ function SongView(props){
                     <div>Monthly Listeners: {props.item.listeners}</div>
                     <div>Playcount: {props.item.playcount}</div>
                 </div>
-                <CreateReview data={props}/>
+                <CreateReview data={props.item.name}/>
                 <Link to="/reviews">See all reviews</Link>
             </div>
         )

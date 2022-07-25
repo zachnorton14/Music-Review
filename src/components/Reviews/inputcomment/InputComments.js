@@ -23,19 +23,11 @@ function CommentForm() {
 			body: JSON.stringify(comment)
 		})
         //when the new comment is created, the page reloads to the comments page
-		window.location ='/comments'
+		window.location ='/reviews'
 	}
 
-    const simpleStyle = {
-        'width': '25vw',
-        'height': '20vh',
-        'textAlign': 'center',
-        'border': '1px solid black',
-        'margin': 'auto'
-    }
-
 	return (
-		<main style={simpleStyle}>
+		<main className="simplestyle">
 			<h1>New Review</h1>
 			<form onSubmit={handleSubmit}>
 				<div className="form-group">
