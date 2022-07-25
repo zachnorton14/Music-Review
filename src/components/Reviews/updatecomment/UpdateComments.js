@@ -24,37 +24,23 @@ function UpdateForm(props) {
 		fetchData()
 	}, [ commentId ])
 
-	/* async function handleSubmit(e) {
+	const handleSubmit = async (e) => {
 		e.preventDefault()
-		
-		await fetch(`http://localhost:5000/comments/${commentId}`, {
-			method: 'PUT',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify(comment)
-		})
-		window.location="/reviews"
-	} */
-
-	const handleSubmit = async e => {
-		e.preventDefault();
-		try {
-		  const body = { comment };
-		  const response = await fetch(
-			`http://localhost:5000/comments/${commentId}`,
-			{
-			  method: "PUT",
-			  headers: { "Content-Type": "application/json" },
-			  body: JSON.stringify(body)
-			}
-		  );
-	
-		  window.location = "/reviews";
-		} catch (err) {
-		  console.error(err.message);
-		}
-	  };
+        
+        fetch(`http://localhost:5000/comments/${commentId}`, {
+            method: 'PUT',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(comment)
+        })
+        .then((response) => response.json())
+        .then((result) => {
+            console.log('Success:', result);
+        })
+            .catch((error) => {
+            console.error('Error:', error);
+        });
+        window.location="/reviews"
+	};
 
 	//delete function
 	const deleteComment = async (commentId) => {
