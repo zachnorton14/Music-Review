@@ -1,15 +1,14 @@
 import './App.css';
 import Home from './components/Home/Home';
 import Error404 from './Error404';
+import Reviews from './components/Reviews/Reviews';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
-
-// require('dotenv').config()
-
+import CommentProvider from './context/CommentContext';
 
 function App() {
 
   return (
+    <CommentProvider>
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -17,6 +16,7 @@ function App() {
         <Route path="/" element={<Error404 />} />
       </Routes>
     </Router>
+    </CommentProvider>
   );
 }
 

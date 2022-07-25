@@ -1,19 +1,13 @@
 import React from 'react'
-import { useHistory } from 'react-router'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 
 function NavBar(){
-
-    const history = useHistory()
 
     return (
         <div>
             <li>
-            <a href="#" onClick={() => history.push("/")}>
-                    Home
-                </a>
-                <a href="#" onClick={() => history.push("/reviews")}>
-                    Reviews
-                </a>
+                <Link to="/">Home</Link>
+                <Link to="/reviews">Reviews</Link>
             </li>
         </div>
     )

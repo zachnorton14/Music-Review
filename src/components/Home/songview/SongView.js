@@ -1,22 +1,15 @@
 import React, { useState } from 'react'
 import CreateReview from '../createreview/CreateReview'
 import './songview.css'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 
 
 function SongView(props){
     let [view, setView] = useState(false)
 
-    // const simpleStyle = {
-    //     'border': '2px solid black',
-    //     'margin': '1em'
-
-    // }
-
-    // const detailStyle = {
-    //     'border': '2px solid black',
-    //     'margin': '1em',
-        
-    // }
+    const handleClick = () => (
+        Navigate('/reviews')
+    )
 
     const simpleView = () => {}
 
@@ -29,7 +22,7 @@ function SongView(props){
                     <div>Playcount: {props.item.playcount}</div>
                 </div>
                 <CreateReview data={props}/>
-                <h3>See All Reviews</h3>
+                <Link to="/reviews">See all reviews</Link>
             </div>
         )
     }
