@@ -8,7 +8,7 @@ function CreateReview(props){
         name: '',
         rating: 5,
         comment: '',
-        song_name: props.data.name,
+        song_name: `${props.data}`,
         date:'2022-07-25' //ZM
     })
 

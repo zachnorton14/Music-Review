@@ -21,7 +21,7 @@ function SongView(props){
                     <div>Monthly Listeners: {props.item.listeners}</div>
                     <div>Playcount: {props.item.playcount}</div>
                 </div>
-                <CreateReview data={props}/>
+                <CreateReview data={props.item.name}/>
                 <Link to="/reviews">See all reviews</Link>
             </div>
         )
