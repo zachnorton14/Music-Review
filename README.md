@@ -13,6 +13,8 @@ Spootify is a free music review platform that users can utilize to create their 
 
 ## API
 
+This app is created using [last.fm api](https://www.last.fm/api)
+
 The back-end API that connects to this front-end is [located here](https://github.com/ZahraO1/Music-Review/tree/development).
 
 ## Credit
