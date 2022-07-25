@@ -58,7 +58,7 @@ function CreateReview(props){
                     id="rating"
                     name="rating"
                     min="1" 
-                    max="5"
+                    max="10"
                 />
                 <label htmlFor="body">Your Review</label>
                 <input 
