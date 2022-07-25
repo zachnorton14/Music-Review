@@ -20,11 +20,13 @@ The back-end API that connects to this front-end is [located here](https://githu
 # Back-End
 
 *Zahra Masroor([github](https://github.com/ZahraO1))
+
 *Zachary Norton([github](https://github.com/okayzach))
 
 # Front-End
 
 *John Roub([github](https://github.com/JohnRoub2000))
+
 *Zahra Masroor([github](https://github.com/ZahraO1))
 
 ## In the Future
@@ -36,7 +38,7 @@ The back-end API that connects to this front-end is [located here](https://githu
 
 MIT License
 
-Copyright (c) 2022 Spootfiy^tm
+Copyright (c) 2022 Spootfiy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
