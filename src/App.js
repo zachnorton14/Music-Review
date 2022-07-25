@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react'
 import './App.css';
-import NavBar from './components/navbar/Navbar';
-import Chart from './components/chart/Chart';
-import { BrowserRouter as Router, Route, } from 'react-router-dom'
+import Home from './components/Home/Home';
+import Error404 from './Error404';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
 // require('dotenv').config()
@@ -10,24 +9,14 @@ import { BrowserRouter as Router, Route, } from 'react-router-dom'
 
 function App() {
 
-  let [data, setData] = useState([])
-
-  useEffect(() => {
-      async function SongList(){
-          const response = await fetch('http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=a6abe65cf5f35881c07d4928ea5a53be&format=json')
-          const resData = await response.json()
-          console.log(resData.tracks.track)
-          setData(resData.tracks.track)
-      }
-      SongList()
-  }, [])
-
   return (
-    <div className="App">
-      <NavBar />
-      <h1>Welcome to the music review app</h1>
-      <Chart data={data}/>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/reviews" element={<Reviews />} />
+        <Route path="/" element={<Error404 />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -10,8 +10,6 @@ function CreateReview(props){
         song_name: props.data.name
     })
 
-    console.log(props)
-
     let [message, setMessage] = useState('')
 
     async function handleSubmit(e){

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Reviews from '../reviews/Reviews'
 import CreateReview from '../createreview/CreateReview'
 import './songview.css'
 
@@ -30,7 +29,7 @@ function SongView(props){
                     <div>Playcount: {props.item.playcount}</div>
                 </div>
                 <CreateReview data={props}/>
-                <Reviews data={props}/>
+                <h3>See All Reviews</h3>
             </div>
         )
     }
