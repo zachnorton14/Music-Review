@@ -23,7 +23,7 @@ function CommentForm() {
 			body: JSON.stringify(comment)
 		})
         //when the new comment is created, the page reloads to the comments page
-		window.location ='/comments'
+		window.location ='/reviews'
 	}
 
     const simpleStyle = {

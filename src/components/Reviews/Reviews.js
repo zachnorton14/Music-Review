@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Comments } from '../../context/CommentContext'
 import NavBar from '../../NavBar/Navbar'
 import CommentForm from './inputcomment/InputComments'
+import GalleryItem from './galleryitem/GalleryItem'
 
 function Reviews(){
 
