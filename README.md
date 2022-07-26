@@ -6,8 +6,6 @@
 
 Spootify is a free music review platform that users can utilize to create their own reviews, or view others.
 
-**
-
 ## Features
 
 * Create your own music review of music that you love/hate.
