@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './inputcomment.css'
 
 function CommentForm() {
 
@@ -27,7 +28,7 @@ function CommentForm() {
 	}
 
 	return (
-		<main className="simplestyle">
+		<main className="newformstyle">
 			<h1>New Review</h1>
 			<form onSubmit={handleSubmit}>
 				<div className="form-group">

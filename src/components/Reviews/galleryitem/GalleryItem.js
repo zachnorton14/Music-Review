@@ -1,5 +1,6 @@
 import { useState } from 'react' 
 import UpdateComment from "../updatecomment/UpdateComments"
+import './galleryitem.css'
 
 function GalleryItem(props){
     let [view, setView] = useState(false)

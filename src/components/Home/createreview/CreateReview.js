@@ -33,6 +33,7 @@ function CreateReview(props){
         } else {
             setMessage(data.message)
         }
+        window.location='/'
     }
 
     const simpleView = () => {}
