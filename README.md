@@ -17,10 +17,10 @@ Spootify is a free music review platform that users can utilize to create their 
 
 ## APP
 
-| Path                    | Component    | Purpose    |
-|-------------------------|--------------|------------|
-| /src/components/Home    | `Home.js`    | Home Page  |
-| /src/components/Reviews | `Reviews.js` | Review page|
+| Path     | Component    | Purpose    |
+|----------|--------------|------------|
+| /Home    | `Home.js`    | Home Page  |
+| /Reviews | `Reviews.js` | Review page|
 
 ## API
 
