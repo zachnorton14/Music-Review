@@ -30,10 +30,6 @@ The back-end API that connects to this front-end is [located here](https://githu
 
 ***
 
-## Setup
-
-
-
 ## Credit
 
 ### Back-End
