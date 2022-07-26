@@ -8,6 +8,7 @@ function UpdateForm(props) {
 	console.log(`comment id: ${commentId}`)
 
     const [comment, setComment] = useState({
+		id: commentId,
 		song_name: '',
 		rating: '',
 		name: '',
