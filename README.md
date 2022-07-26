@@ -1,21 +1,39 @@
-# Spootify-API
+# Spootify 
+
+***
 
 ## Description
 
-Spootify is a free music review platform that users can utilize to create their own review, or view others.
+Spootify is a free music review platform that users can utilize to create their own reviews, or view others.
+
+**
 
 ## Features
 
-* Create your own music review of an album you love/hate.
+* Create your own music review of music that you love/hate.
 * View other users opinions on albums they've heard.
-* Comment on others posts and let them know how you feel about their review.
-* Look at the top albums in a specified genre of your choice.
+* Look at the top 100 tracks on the homepage.
+* Navigation bar to guide you throughout the website
+* Comment on a song and rate it the way you see fit, and update comments if your opinion changes.
+
+** APP
+
+| Path                    | Component    | Purpose    |
+|-------------------------|--------------|------------|
+| /src/components/Home    | `Home.js`    | Home Page  |
+| /src/components/Reviews | `Reviews.js` | Review page|
 
 ## API
 
 This app is created using [last.fm api](https://www.last.fm/api)
 
 The back-end API that connects to this front-end is [located here](https://github.com/ZahraO1/Music-Review-API).
+
+***
+
+## Setup
+
+
 
 ## Credit
 
@@ -31,10 +49,15 @@ The back-end API that connects to this front-end is [located here](https://githu
 
 * Zahra Masroor([github](https://github.com/ZahraO1))
 
+* Logan Sawyer([github](https://github.com/Sogiee))
+
 ## In the Future
 
 ### We plan to implement these features in the future.
-*placeholder words
+
+* Comment on others posts and let them know how you feel about their review.
+
+* Look at the top albums and be able to sort by genre.
 
 ## License
 
