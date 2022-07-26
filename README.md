@@ -15,8 +15,9 @@ Spootify is a free music review platform that users can utilize to create their 
 * Look at the top 100 tracks on the homepage.
 * Navigation bar to guide you throughout the website
 * Comment on a song and rate it the way you see fit, and update comments if your opinion changes.
+* Double clicking on any review shows more information on the review such as song name, rating , the reviewer, and any comments made on that review.
 
-** APP
+## APP
 
 | Path                    | Component    | Purpose    |
 |-------------------------|--------------|------------|
