@@ -50,7 +50,7 @@ function UpdateForm(props) {
                 method: "DELETE"
             });       
 
-           setComment(comment.filter(comment => comment.id !== id));
+           //setComment(comment.filter(comment => comment.id !== commentId));
         } catch (err) {
             console.error(err.message);
         }
