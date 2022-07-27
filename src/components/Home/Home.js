@@ -10,7 +10,7 @@ function Home() {
 
   useEffect(() => {
       async function SongList(){
-          const response = await fetch('http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=a6abe65cf5f35881c07d4928ea5a53be&format=json')
+          const response = await fetch(`${process.env.SONG_API}`)
           const resData = await response.json()
         //   console.log(resData.tracks.track)
           setData(resData.tracks.track)
