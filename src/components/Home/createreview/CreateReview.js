@@ -42,7 +42,7 @@ function CreateReview(props){
     
     const formView = () => {
         return (
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="createreview">
                 <label htmlFor="userName">Username</label>
                 <input 
                     type="text"

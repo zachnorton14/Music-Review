@@ -11,7 +11,7 @@ function Chart(props){
     })
 
     return(
-        <div>
+        <div className="chart">
             <h1>USA's Top 100 Charts</h1>
             {display}
         </div>
