@@ -32,6 +32,7 @@ function CreateReview(props){
             console.log('success') //ZM
         } else {
             setMessage(data.message)
+            console.log(message)
         }
         window.location='/'
     }
