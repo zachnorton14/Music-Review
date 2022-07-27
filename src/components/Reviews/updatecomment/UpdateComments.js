@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { useParams } from "react-router"
 import React from "react"
 
 function UpdateForm(props) {
@@ -49,7 +48,7 @@ function UpdateForm(props) {
             const deleteComment = await fetch(`http://localhost:5000/comments/${commentId}`, {
                 method: "DELETE"
             });       
-
+			deleteComment()
            //setComment(comment.filter(comment => comment.id !== commentId));
         } catch (err) {
             console.error(err.message);
