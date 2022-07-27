@@ -16,7 +16,7 @@ function CommentForm() {
     async function handleSubmit(e) {
 		e.preventDefault()
 
-		await fetch(`http://localhost:5000/comments`, {
+		await fetch(`https://music-review-api.herokuapp.com/comments`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

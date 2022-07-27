@@ -17,7 +17,7 @@ function UpdateForm(props) {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const response = await fetch(`http://localhost:5000/comments/${commentId}`)
+			const response = await fetch(`https://music-review-api.herokuapp.com/comments/${commentId}`)
 			const resData = await response.json()
 			setComment(resData)
 		}
@@ -27,7 +27,7 @@ function UpdateForm(props) {
 	const handleSubmit = async (e) => {
 		e.preventDefault()
         
-        fetch(`http://localhost:5000/comments/${commentId}`, {
+        fetch(`https://music-review-api.herokuapp.com/comments/${commentId}`, {
             method: 'PUT',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(comment)
@@ -45,7 +45,7 @@ function UpdateForm(props) {
 	//delete function
 	const deleteComment = async (commentId) => {
         try {
-            const deleteComment = await fetch(`http://localhost:5000/comments/${commentId}`, {
+            const deleteComment = await fetch(`https://music-review-api.herokuapp.com/comments/${commentId}`, {
                 method: "DELETE"
             });       
 			deleteComment()
