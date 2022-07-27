@@ -1,49 +1,31 @@
 import React, { useState } from 'react'
-import Reviews from '../reviews/Reviews'
 import CreateReview from '../createreview/CreateReview'
 import './songview.css'
+import { Link } from 'react-router-dom'
 
 
 function SongView(props){
     let [view, setView] = useState(false)
 
-    // const simpleStyle = {
-    //     'border': '2px solid black',
-    //     'margin': '1em'
-
-    // }
-
-    // const detailStyle = {
-    //     'border': '2px solid black',
-    //     'margin': '1em',
-        
-    // }
-
-    const simpleView = () => {
-        return (
-            <div className="simpleview">
-                <h3>{props.item.name}</h3>
-            </div>
-        )
-    }
+    const simpleView = () => {}
 
     const detailView = () => {
         return (
             <div className="detailview">
-                <h3>{props.item.name}</h3>
                 <div className="songdetail">
                     <div>Artist: {props.item.artist.name}</div>
                     <div>Monthly Listeners: {props.item.listeners}</div>
                     <div>Playcount: {props.item.playcount}</div>
                 </div>
-                <CreateReview />
-                <Reviews />
+                <CreateReview data={props.item.name}/>
+                <Link to="/reviews">See all reviews</Link>
             </div>
         )
     }
 
     return(
-        <div onClick={() => setView(!view)}>
+        <div>
+            <h3 onClick={() => setView(!view)}>{props.item.name}</h3>
             {view ? detailView() : simpleView()}
         </div>
     )

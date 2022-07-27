@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import SongView from '../songview/SongView'
+import './chart.css'
 
 function Chart(props){
 

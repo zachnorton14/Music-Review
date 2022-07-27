@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Spootify 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+***
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Spootify is a free music review platform that users can utilize to create their own reviews, or view others.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Create your own music review of music that you love/hate.
+* View other users opinions on albums they've heard.
+* Look at the top 100 tracks on the homepage.
+* Navigation bar to guide you throughout the website
+* Comment on a song and rate it the way you see fit, and update comments if your opinion changes.
+* Double clicking on any review shows more information on the review such as song name, rating , the reviewer, and any comments made on that review.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## APP
 
-### `npm test`
+| Path     | Component    | Purpose    |
+|----------|--------------|------------|
+| /Home    | `Home.js`    | Home Page  |
+| /Reviews | `Reviews.js` | Review page|
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API
 
-### `npm run build`
+This app is using [last.fm api](https://www.last.fm/api)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The back-end that connects to this front-end is [located here](https://github.com/ZahraO1/Music-Review-API).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+***
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Credit
 
-### `npm run eject`
+### Back-End
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Zahra Masroor([github](https://github.com/ZahraO1))
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Zachary Norton([github](https://github.com/okayzach))
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Front-End
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* John Roub([github](https://github.com/JohnRoub2000))
 
-## Learn More
+* Zahra Masroor([github](https://github.com/ZahraO1))
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Logan Sawyer([github](https://github.com/Sogiee))
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## In the Future
 
-### Code Splitting
+### We plan to implement these features in the future.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Comment on others posts and let them know how you feel about their review.
 
-### Analyzing the Bundle Size
+* Look at the top albums and be able to sort by genre.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Copyright (c) 2022 Spootfiy
 
-### Advanced Configuration
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
