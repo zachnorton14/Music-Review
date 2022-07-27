@@ -8,10 +8,9 @@ function CommentProvider({ children }){
     const [ allCommentData, setAllCommentData ] = useState([])
 
     useEffect(() => {
-        //const API_URL = process.env.COMMENT_URL || `http://localhost:5000/comments`
-        const API_URL = `https://music-review-api.herokuapp.com/comments`
+        const COMMENT_URL = `https://music-review-api.herokuapp.com/comments` || `http://localhost:5000/comments`
         const fetchData = async () => {
-            const response = await fetch(API_URL)
+            const response = await fetch(COMMENT_URL)
             const resData = await response.json()
             console.log(resData)
             setAllCommentData(resData)
