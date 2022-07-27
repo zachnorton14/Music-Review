@@ -17,13 +17,15 @@ function CreateReview(props){
     async function handleSubmit(e){
         e.preventDefault() //ZM
 
-        const response = await fetch(`http://localhost:5000/comments`, {
+        const response = await fetch(`https://music-review-api.herokuapp.com/comments`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(comment)
+            
         })
+        window.location='/'
 
         const data = await response.json()
         
@@ -34,7 +36,6 @@ function CreateReview(props){
             setMessage(data.message)
             console.log(message)
         }
-        window.location='/'
     }
 
     const simpleView = () => {}
