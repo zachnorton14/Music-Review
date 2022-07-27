@@ -8,7 +8,7 @@ function CommentProvider({ children }){
     const [ allCommentData, setAllCommentData ] = useState([])
 
     useEffect(() => {
-        const API_URL = `http://localhost:5000/comments`
+        const API_URL = process.env.COMMENT_URL || `http://localhost:5000/comments`
         const fetchData = async () => {
             const response = await fetch(API_URL)
             const resData = await response.json()
