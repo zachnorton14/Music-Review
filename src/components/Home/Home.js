@@ -9,7 +9,7 @@ function Home() {
   let [data, setData] = useState([])
 
   useEffect(() => {
-        const SONG_API = `http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=a6abe65cf5f35881c07d4928ea5a53be&format=json`
+        const SONG_API = `http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=a6abe65cf5f35881c07d4928ea5a53be`
       async function SongList(){
           const response = await fetch(SONG_API)
           const resData = await response.json()
