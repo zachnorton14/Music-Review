@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import React from "react"
+import '../../css/Reviews/updatecomment.css'
 
 function UpdateForm(props) {
 

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './inputcomment.css'
+import '../../css/Reviews/inputcomment.css'
 
 function CommentForm() {
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './createreview.css'
+import '../../css/Home/createreview.css'
 
 function CreateReview(props){
 
@@ -79,7 +79,9 @@ function CreateReview(props){
 
     return(
         <div>
-            <button onClick={() => setView(!view)}>Leave a Review...</button>
+            <button onClick={() => setView(!view)}>
+                <h4>Leave a Review...</h4>
+            </button>
             {view ? formView() : simpleView()}
         </div>
     )

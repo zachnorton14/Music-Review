@@ -1,0 +1,192 @@
+#root {
+  width: 65%;
+  margin: auto;
+  background-color: rgb(34, 34, 34);
+}
+
+body {
+  background-color: rgb(16, 16, 16);
+}
+
+.homebar {
+  background-color: rgb(39, 39, 39);
+  color: rgb(167, 167, 167);
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin: 0;
+  padding: 10px;
+  box-shadow: 0px 0.2px rgb(111, 111, 111);
+  position: sticky;
+  top: 80px;
+}
+
+.reviewbar {
+  background-color: rgb(39, 39, 39);
+  color: rgb(167, 167, 167);
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin: 0;
+  padding: 10px;
+  box-shadow: 0px 0.2px rgb(111, 111, 111);
+  position: sticky;
+  top: 80px;
+}
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: rgb(49, 49, 49);
+}
+.navbar .navcontainer {
+  margin: auto;
+  max-width: 900px;
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.navbar .navcontainer .logo {
+  margin: 5px;
+  width: 45%;
+}
+.navbar .navcontainer h1 {
+  color: rgb(228, 228, 228);
+  font-size: 2.5rem;
+  margin: 0;
+}
+.navbar .navcontainer ul {
+  display: flex;
+  list-style: none;
+  width: 55%;
+  justify-content: center;
+  padding-left: 0px;
+}
+.navbar .navcontainer ul li {
+  margin: 5px;
+  font-size: 1.5rem;
+  padding: 0px 0.5rem 0px 0.5rem;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+}
+.navbar .navcontainer ul li a {
+  text-decoration: none;
+  color: rgb(228, 228, 228);
+  font-weight: 600;
+  padding: 0px 2px 2px 2px;
+  display: flex;
+  align-content: center;
+}
+.navbar .navcontainer ul li a:hover {
+  text-decoration: underline;
+}
+
+.chart .chartheader {
+  display: flex;
+  height: 40px;
+}
+.chart .chartheader h1 {
+  height: 40px;
+  color: rgb(167, 167, 167);
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 2.5;
+  width: 70%;
+  text-align: left;
+  box-shadow: 0px 0.2px rgb(111, 111, 111);
+}
+.chart .chartheader .artist {
+  height: 40px;
+  color: rgb(167, 167, 167);
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 2.5;
+  width: 20%;
+}
+.chart .chartheader .number {
+  height: 40px;
+  color: rgb(167, 167, 167);
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 2.5;
+  width: 10%;
+}
+
+.songview {
+  display: flex;
+  flex-wrap: wrap;
+}
+.songview .songtitle {
+  display: flex;
+  width: 100%;
+}
+.songview .songtitle .song {
+  color: rgb(228, 228, 228);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 0;
+  width: 70%;
+  text-align: left;
+  line-height: 2.5;
+}
+.songview .songtitle .artist {
+  color: rgb(167, 167, 167);
+  font-size: 0.9rem;
+  width: 20%;
+  font-weight: 100;
+  line-height: 3;
+  text-decoration: none;
+}
+.songview .songtitle .artist:hover {
+  text-decoration: underline;
+}
+.songview .songtitle .index {
+  color: rgb(167, 167, 167);
+  font-size: 0.9rem;
+  width: 10%;
+  font-weight: 100;
+}
+.songview .detailview {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+}
+.songview .detailview .space {
+  width: 10%;
+}
+.songview .detailview .songdetail {
+  width: 30%;
+}
+.songview .detailview .songdetail > div {
+  text-align: left;
+  color: rgb(167, 167, 167);
+  font-weight: 200;
+}
+.songview .detailview .reviews {
+  width: 60%;
+}
+.songview .detailview .reviews a {
+  color: rgb(167, 167, 167);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 0.75rem;
+}
+.songview .detailview .reviews a:hover {
+  text-decoration: underline;
+}
+.songview .detailview .reviews button {
+  border-radius: 20px;
+  background-color: rgb(74, 207, 120);
+  border-style: none;
+}
+.songview .detailview .reviews button h4 {
+  color: black;
+  font-weight: 500;
+  margin: 0;
+  padding: 4px;
+}
+
+/*# sourceMappingURL=app.css.map */

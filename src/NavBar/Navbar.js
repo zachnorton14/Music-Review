@@ -1,14 +1,23 @@
 import React from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function NavBar(){
 
     return (
-        <div>
-            <li>
-                <Link to="/">Home</Link>
-                <Link to="/reviews">Reviews</Link>
-            </li>
+        <div className="navbar">
+            <div className="navcontainer">
+                <div className='logo'>
+                    <h1>Spootify</h1>
+                </div>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/reviews">Reviews</Link>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }

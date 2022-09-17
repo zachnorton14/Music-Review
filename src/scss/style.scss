@@ -1,0 +1,197 @@
+$side-bar-background: rgb(16, 16, 16);
+$nav-bar-background: rgb(49, 49, 49);
+$title-background: rgb(39, 39, 39);
+$app-background: rgb(34, 34, 34);
+$shadow-color: rgb(111, 111, 111);
+$text-primary: rgb(228, 228, 228);
+$text-secondary: rgb(167, 167, 167);
+$header-height: 40px;
+$shading: 0px .2px $shadow-color;
+
+@mixin title {
+    background-color: $title-background;
+    color: $text-secondary;
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 10px;
+    box-shadow: $shading;
+    position: sticky;
+    top: 80px;
+}
+
+@mixin header {
+    height: $header-height;
+    color: $text-secondary;
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 2.5;
+}
+
+@mixin songdetails {
+    text-align: left;
+    color: $text-secondary;
+    font-weight: 200;
+}
+
+#root {
+    width: 65%;
+    margin: auto;
+    background-color: $app-background;
+}
+
+body {
+    background-color: $side-bar-background;
+}
+
+.homebar {
+    @include title();
+}
+
+.reviewbar {
+    @include title();
+}
+
+.navbar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: $nav-bar-background;
+    .navcontainer {
+        margin: auto;
+        max-width: 900px;
+        display: flex;
+        height: 80px;
+        align-items: center;
+        .logo {
+            margin: 5px;
+            width: 45%;
+        }
+            h1 {
+                color: $text-primary;
+                font-size: 2.5rem;
+                margin: 0;
+            }
+        ul {
+            display: flex;
+            list-style: none;
+            width: 55%;
+            justify-content: center;
+
+            padding-left: 0px;
+            li {
+                margin: 5px;
+                font-size: 1.5rem;
+                padding: 0px .5rem 0px .5rem;
+                line-height: 2;
+                display: flex;
+                align-items: center;
+                a {
+                    text-decoration: none;
+                    color: $text-primary;
+                    font-weight:600;
+                    padding: 0px 2px 2px 2px;
+                    display: flex;
+                    align-content: center;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.chart {
+    .chartheader{
+        display: flex;
+        height: $header-height;
+        h1 {
+            @include header;
+            width: 70%;
+            text-align: left;
+            box-shadow: $shading;
+        }
+        .artist {
+            @include header;
+            width: 20%;
+        }
+        .number {
+            @include header;
+            width: 10%;
+        }
+    }
+}
+
+.songview {
+    display: flex;
+    flex-wrap: wrap;
+    .songtitle {
+        display: flex;
+        width: 100%;
+        .song {
+            color: $text-primary;
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin: 0;
+            width: 70%;
+            text-align: left;
+            line-height: 2.5;
+        }
+        .artist {
+            color: $text-secondary;
+            font-size: .9rem;
+            width: 20%;
+            font-weight: 100;
+            line-height: 3;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .index{
+            color: $text-secondary;
+            font-size: .9rem;
+            width: 10%;
+            font-weight: 100;
+        }
+    }
+    .detailview {
+        width: 100%;
+        display: flex;
+        margin-bottom: 10px;
+            .space {
+                width: 10%;
+            }
+            .songdetail {
+                width: 30%;
+                > div {
+                    @include songdetails();
+                }
+            }
+            .reviews {
+                width: 60%;
+                a {
+                    color: $text-secondary;
+                    text-decoration: none;
+                    font-weight: 200;
+                    font-size: .75rem;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                button {
+                    border-radius: 20px;
+                    background-color: rgb(74, 207, 120);
+                    border-style: none;
+                    h4 {
+                        color: black;
+                        font-weight: 500;
+                        margin: 0;
+                        padding: 4px;
+                    }
+                }
+            }
+    }
+}

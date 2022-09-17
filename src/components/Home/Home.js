@@ -1,8 +1,8 @@
 import React from 'react'
-import Chart from './chart/Chart'
+import Chart from './Chart'
 import NavBar from '../../NavBar/Navbar'
 import { useState, useEffect } from 'react'
-import './Home.css'
+import '../../css/Home/Home.css'
 
 function Home() {
 
@@ -13,16 +13,16 @@ function Home() {
       async function SongList(){
           const response = await fetch(API_URL)
           const resData = await response.json()
-        //   console.log(resData.tracks.track)
+          // console.log(resData.tracks.track)
           setData(resData.tracks.track)
       }
       SongList()
   }, [])
 
     return(
-        <div>
+        <div className='home'>
             <NavBar />
-            <h1>HOME</h1>
+            <h1 className="homebar">HOME</h1>
             <Chart data={data}/>
         </div>
     )

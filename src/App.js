@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import Home from './components/Home/Home';
 import Error404 from './Error404';
 import Reviews from './components/Reviews/Reviews';

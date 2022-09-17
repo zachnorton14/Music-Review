@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { Comments } from '../../context/CommentContext'
 import NavBar from '../../NavBar/Navbar'
-import CommentForm from './inputcomment/InputComments'
-import GalleryItem from './galleryitem/GalleryItem'
+import CommentForm from './InputComments'
+import GalleryItem from './GalleryItem'
 
 function Reviews(){
 
@@ -17,6 +17,9 @@ function Reviews(){
     return(
         <div>
             <NavBar />
+            <h1 className='reviewbar'>
+              REVIEWS
+            </h1>
             <CommentForm />
             {renderComments}            
         </div>
