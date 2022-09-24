@@ -79,9 +79,11 @@ function CreateReview(props){
 
     return(
         <div>
-            <button onClick={() => setView(!view)}>
-                <h4>Leave a Review...</h4>
-            </button>
+            <div className="buttoncontainer">
+                <button onClick={() => setView(!view)}>
+                    <h4>Leave a Review...</h4>
+                </button>
+            </div>
             {view ? formView() : simpleView()}
         </div>
     )

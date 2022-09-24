@@ -33,6 +33,12 @@ $shading: 0px .2px $shadow-color;
     text-align: left;
     color: $text-secondary;
     font-weight: 200;
+    height: 30px;
+}
+
+@keyframes buttonhoveron {
+    from { padding: 4px;}
+    to { padding: 6px; border-radius: 30%;}
 }
 
 #root {
@@ -181,17 +187,28 @@ body {
                         text-decoration: underline;
                     }
                 }
-                button {
-                    border-radius: 20px;
-                    background-color: rgb(74, 207, 120);
-                    border-style: none;
-                    h4 {
-                        color: black;
-                        font-weight: 500;
-                        margin: 0;
-                        padding: 4px;
-                    }
+                .buttoncontainer {
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center
                 }
+                    button {
+                        border-radius: 20px;
+                        background-color: rgb(61, 184, 104);
+                        border-style: none;
+                        h4 {
+                            color: black;
+                            font-weight: 500;
+                            margin: 0;
+                            padding: 4px;
+                            &:hover {
+                                animation-name: buttonhoveron;
+                                animation-duration: 100ms;
+                                animation-fill-mode: both;
+                            }
+                        }
+                    }
             }
     }
 }

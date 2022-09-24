@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Comments } from '../../context/CommentContext'
-import NavBar from '../../NavBar/Navbar'
+import NavBar from '../NavBar/Navbar'
 import CommentForm from './InputComments'
 import GalleryItem from './GalleryItem'
 

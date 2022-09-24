@@ -1,6 +1,6 @@
 import React from 'react'
 import Chart from './Chart'
-import NavBar from '../../NavBar/Navbar'
+import NavBar from '../NavBar/Navbar'
 import { useState, useEffect } from 'react'
 import '../../css/Home/Home.css'
 

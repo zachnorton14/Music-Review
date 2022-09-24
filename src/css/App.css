@@ -1,3 +1,12 @@
+@keyframes buttonhoveron {
+  from {
+    padding: 4px;
+  }
+  to {
+    padding: 6px;
+    border-radius: 30%;
+  }
+}
 #root {
   width: 65%;
   margin: auto;
@@ -164,6 +173,7 @@ body {
   text-align: left;
   color: rgb(167, 167, 167);
   font-weight: 200;
+  height: 30px;
 }
 .songview .detailview .reviews {
   width: 60%;
@@ -177,9 +187,15 @@ body {
 .songview .detailview .reviews a:hover {
   text-decoration: underline;
 }
+.songview .detailview .reviews .buttoncontainer {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .songview .detailview .reviews button {
   border-radius: 20px;
-  background-color: rgb(74, 207, 120);
+  background-color: rgb(61, 184, 104);
   border-style: none;
 }
 .songview .detailview .reviews button h4 {
@@ -187,6 +203,11 @@ body {
   font-weight: 500;
   margin: 0;
   padding: 4px;
+}
+.songview .detailview .reviews button h4:hover {
+  animation-name: buttonhoveron;
+  animation-duration: 100ms;
+  animation-fill-mode: both;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -9,9 +9,9 @@ function GalleryItem(props){
     const simpleView = () => {
         return (
             <div className="simplestyle">
-                <h2 style={{'color':'blue'}}>Song:</h2>
+                <h2>Song:</h2>
                 <h2>{props.item.song_name}</h2>
-                <h2 style={{'color':'purple'}}>Rating:</h2>
+                <h2>Rating:</h2>
                 <h2>{props.item.rating}</h2>
             </div>
         )
@@ -35,7 +35,7 @@ function GalleryItem(props){
 
     //user can double click to trigger between the simple and detailed view
     return (
-        <div onDoubleClick={() =>setView(!view)} style={{'display': 'inline-block'}}>
+        <div onClick={() =>setView(!view)} style={{'display': 'inline-block'}}>
             {view ? detailView() : simpleView()}
         </div>
     )
